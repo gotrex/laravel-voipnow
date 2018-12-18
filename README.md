@@ -6,7 +6,7 @@
 
 A Laravel 5 wrapper for the VoipNow SystemAPI.
 
-**Note:** The token credential information is stored in a JSON file for application wide usage. If you prefer multi user usage please refer to the [Multiuser Support](#multiser-support) section of the readme.
+**Note:** The token credential information is stored in a JSON file for application wide usage. If you prefer multi user usage please refer to the [Multiuser Support](#multiuser-support) section of the readme.
 
 ## Installation
 
