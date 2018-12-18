@@ -1,0 +1,55 @@
+{
+    "name": "gotrex/laravel-voipnow",
+    "description": "A Laravel wrapper for the VoipNow API",
+    "keywords": [
+        "gotrex",
+        "voipnow",
+        "4psa",
+        "laravel-voipnow"
+    ],
+    "homepage": "https://github.com/gotrex/laravel-voipnow",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ortwin van Vessem",
+            "email": "ortwin.vanvessem@go-trex.com",
+            "homepage": "https://go-trex.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gotrex\\VoipNow\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gotrex\\VoipNow\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gotrex\\VoipNow\\VoipNowServiceProvider"
+            ],
+            "aliases": {
+                "VoipNow": "Gotrex\\VoipNow\\VoipNowFacade"
+            }
+        }
+    }
+}
